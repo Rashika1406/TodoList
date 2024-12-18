@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(231, 205, 181);
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(248, 165, 248);
+    margin-top: 10px;
+}
+
+.demo {
+    margin-top: 30px;
+    background-color: aqua;
+    height: fit-content;
+    padding: 30px;
+    width: 300px;
+    margin-left: 400px;
+
+}
+#one{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+li{
+    margin-left: 50px;
+    margin-top: 10px;
+    
+    
+}
+@media screen and (max-width:500px){
+    .demo{
+        margin-left: 100px;
+    }
+    
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+    <div class="demo">
+        <input type="text" id="one" placeholder="Type Something ...">
+        <button id="btn">Add</button>
+        <ul id="two"></ul>
+    </div>
+
+
+    </ul>
+    <script>
+        var one = document.getElementById("one")
+        var btn = document.getElementById("btn")
+        var ul = document.getElementById("two")
+        var demo = document.getElementById("demo")
+
+        btn.addEventListener("click", () => {
+            const addvalue = one.value.trim()
+            if (addvalue) {
+                var li = document.createElement("li")
+                li.innerHTML = addvalue + "<button onclick='del(event)'>Delete</button>"
+                ul.appendChild(li)
+                one.value = '';
+
+            }
+        })
+        function del(event) {
+            event.target.parentElement.remove()
+        }
+
+
+    </script>
+
+</body>
+
+</html>
